@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.12-slim
 
 # Indispensable pour LightGBM
 RUN apt update
