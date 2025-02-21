@@ -29,5 +29,3 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-north1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=housing-predict-api'
-images:
-- gcr.io/$PROJECT_ID/purchase-predict-api:$SHORT_SHA
