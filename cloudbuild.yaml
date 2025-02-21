@@ -12,7 +12,7 @@ steps:
   args:
     - '-c'
     - |
-      sed -s '$a---' k8s/*.yaml > config.yaml.tpl &&
+      sed -s -e '$a\---' k8s/*.yaml > config.yaml.tpl &&
       sed "s/DOCKER_TAG/${SHORT_SHA}/g" config.yaml.tpl > config.yaml>
 - name: 'gcr.io/cloud-builders/kubectl'
   id: Deploy to K8s
